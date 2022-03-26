@@ -211,3 +211,62 @@ footer {
 #toplist {
     padding-left: 20px;
 }
+
+/*  スマホページ*/
+@media (max-width: 670px) {
+    .head {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        background: none;
+    }
+
+    .header h2 {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right a {
+        text-align: left;
+    }
+
+    .back , .sub {
+        width: 100%;
+        background-position: 60% 75%;
+        background-color: rgba(255,255,255,0.5);
+        background-blend-mode: lighten;
+    }
+
+    .description {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main h2 {
+        font-size: 17px;
+    }
+
+    main h3 {
+        font-size: 13px;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kr {
+        margin-top: 50px;
+    }
+
+    .ja {
+        margin-top: 50px;
+
+    }
+}
