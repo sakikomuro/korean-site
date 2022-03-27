@@ -168,7 +168,7 @@ footer {
     height: 100vh;
     background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxNjEyMThfMjkz/MDAxNDgyMDY3ODg4ODIw.zFn3DuP_Mtm5NGc9UoKPldG148RN7zMXxc8T8ETiIHkg.JIQQhYbVC6lERbkZgFNUMshy3XLO_-_WX7uECduU2M4g.JPEG.tsslove/20161218_222243.jpg?type=w800);
     background-size: cover;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
@@ -217,6 +217,42 @@ footer {
 
 #toplist {
     padding-left: 20px;
+}
+
+/* タブレットページ */
+@media (min-width: 670px) and (max-width: 1000px) {
+    .back , .sub {
+        width: 100%;
+        background-position: 60% 75%;
+        background-color: rgba(255,255,255,0.5);
+        background-blend-mode: lighten;
+    }
+
+    .back {
+        height: 600px;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .head {
+        background: none;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rink {
+        width: 80%;
+    }
+    
+    .kr , .ja {
+        width: 40%;
+        margin-top: 80px;
+    }
 }
 
 /*  スマホページ*/
@@ -278,38 +314,3 @@ footer {
     }
 }
 
-/* タブレットページ */
-@media (max-width: 1000px) {
-    .back , .sub {
-        width: 100%;
-        background-position: 60% 75%;
-        background-color: rgba(255,255,255,0.5);
-        background-blend-mode: lighten;
-    }
-
-    .back {
-        height: 600px;
-    }
-
-    .description {
-        width: 50%;
-    }
-
-    .head {
-        background: none;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .rink {
-        width: 80%;
-    }
-    
-    .kr , .ja {
-        width: 40%;
-        margin-top: 80px;
-    }
-}
